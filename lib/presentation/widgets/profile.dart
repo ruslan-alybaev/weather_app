@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ProfilePhoto extends StatelessWidget {
-  const ProfilePhoto({
+class Profile extends StatelessWidget {
+  const Profile({
     super.key,
   });
 
@@ -9,11 +9,14 @@ class ProfilePhoto extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect( // ClipRRect использовали для обрезки углов
       borderRadius: BorderRadius.circular(10),
-      child: Image.asset(
-        "assets/images/pngs/profile.png",
-        width: 40,
-        height: 40,
+      child: IconButton(
+        onPressed: () {}, 
+      icon: const Icon(Icons.person,
+      size: 40,
+      color: Colors.white,
       ),
+      ),
+        
       // Также принимает значение clipBehavior
       // Которое в свою очередь принимает в себя след значения
          //  enum Clip {

@@ -161,13 +161,14 @@ class _HomePageState extends State<HomePage> {
                           width: 20,
                         ),
                         const SizedBox(
-                          width: 2,
+                          width: 5,
                         ),
                         Text(
                           location,
                           style: const TextStyle(
                             color: Colors.white,
                             fontSize: 16,
+                            fontWeight: FontWeight.w500
                           ),
                         ), 
 
@@ -247,7 +248,7 @@ class _HomePageState extends State<HomePage> {
                     ),
 
                     // Иконка профиля.
-                    const ProfilePhoto(),
+                    const Profile(),
                   ],
                 ),
 
@@ -292,7 +293,7 @@ class _HomePageState extends State<HomePage> {
             )
             ),
              Container(
-                padding: const EdgeInsets.only(top: 10),
+                padding: const EdgeInsets.only(top: 25),
                 height: size.height * .20,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -321,7 +322,7 @@ class _HomePageState extends State<HomePage> {
                         'Forecasts',
                         style: TextStyle(
                           fontWeight: FontWeight.w600,
-                          fontSize: 16,
+                          fontSize: 20,
                           color: _constants.primaryColor
                         ),
                       ),
@@ -340,7 +341,7 @@ class _HomePageState extends State<HomePage> {
                         scrollDirection: Axis.horizontal,
                         physics: const BouncingScrollPhysics(),
                         itemBuilder: (BuildContext context, int index) {
-                          if (hourlyWeatherForecast.isNotEmpty && index <hourlyWeatherForecast.length) {
+                          if (hourlyWeatherForecast.isNotEmpty && index < hourlyWeatherForecast.length) {
                             
                           String currentTime = DateFormat("HH:mm:ss").format(DateTime.now());
                           String currentHour = currentTime.substring(0,2);
@@ -372,34 +373,34 @@ class _HomePageState extends State<HomePage> {
                               children: [
                                 Text(
                                   forecastTime,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     fontSize: 17,
-                                    color: _constants.greyColor,
+                                    color: Colors.white,
                                     fontWeight: FontWeight.w500,
                                   ),
                                   ),
                                   Image.asset(
                                     "assets/images/pngs/" + forecastWeatherIcon,
-                                    width: 20,
+                                    width: 30,
                                   ),
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text(
                                         forecastTemperature,
-                                        style: TextStyle(
-                                          color: _constants.greyColor,
+                                        style: const TextStyle(
+                                          color: Colors.white,
                                           fontSize: 17,
                                           fontWeight: FontWeight.w600,
                                         ),
                                       ),
-                                      Text(
+                                      const Text(
                                         "o",
                                         style: TextStyle(
-                                          color: _constants.greyColor,
+                                          color: Colors.white,
                                           fontWeight: FontWeight.w600,
                                           fontSize: 17,
-                                          fontFeatures: const [
+                                          fontFeatures: [
                                             FontFeature.enable('sups')
                                           ]
                                         ),

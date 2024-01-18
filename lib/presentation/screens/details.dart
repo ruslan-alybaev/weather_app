@@ -240,7 +240,7 @@ class _DetailPageState extends State<DetailPage> {
                                                 style: const TextStyle(
                                                   color: Color(0xff6696f5),
                                                   fontWeight: FontWeight.w600,
-
+                                                  fontSize: 20,
                                                 ),
                                               ),
                                               Row(
@@ -303,9 +303,7 @@ class _DetailPageState extends State<DetailPage> {
                                               ),
                                             ],
                                           ),
-                                         const SizedBox(
-                                          height: 10,
-                                        ),
+                                         
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
@@ -314,7 +312,7 @@ class _DetailPageState extends State<DetailPage> {
                                               children: [
                                                 Image.asset(
                                                   "assets/images/pngs/" + getForecastWeather(0)["weatherIcon"],
-                                                  width: 30, 
+                                                  width: 50, 
                                                 ),
                                                 const SizedBox(
                                                   width: 5,
@@ -322,7 +320,7 @@ class _DetailPageState extends State<DetailPage> {
                                                 Text(
                                                   getForecastWeather(0)["weatherName"],
                                                   style: TextStyle(
-                                                    fontSize: 16,
+                                                    fontSize: 18,
                                                     color: Colors.grey,
                                                   ),
                                                 ),
@@ -334,7 +332,7 @@ class _DetailPageState extends State<DetailPage> {
                                                 Text(
                                                   getForecastWeather(0)["chanceOfRain"].toString() + "%",
                                                   style: TextStyle(
-                                                    fontSize: 16,
+                                                    fontSize: 18,
                                                     color: Colors.grey,
                                                   ),
                                                 ),
@@ -374,7 +372,7 @@ class _DetailPageState extends State<DetailPage> {
                                                 style: const TextStyle(
                                                   color: Color(0xff6696f5),
                                                   fontWeight: FontWeight.w600,
-
+                                                    fontSize: 20,
                                                 ),
                                               ),
                                               Row(
@@ -437,9 +435,7 @@ class _DetailPageState extends State<DetailPage> {
                                               ),
                                             ],
                                           ),
-                                         const SizedBox(
-                                          height: 10,
-                                        ),
+                                         
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
@@ -448,7 +444,7 @@ class _DetailPageState extends State<DetailPage> {
                                               children: [
                                                 Image.asset(
                                                   "assets/images/pngs/" + getForecastWeather(1)["weatherIcon"],
-                                                  width: 30, 
+                                                  width: 50, 
                                                 ),
                                                 const SizedBox(
                                                   width: 5,
@@ -456,7 +452,7 @@ class _DetailPageState extends State<DetailPage> {
                                                 Text(
                                                   getForecastWeather(1)["weatherName"],
                                                   style: TextStyle(
-                                                    fontSize: 16,
+                                                    fontSize: 18,
                                                     color: Colors.grey,
                                                   ),
                                                 ),
@@ -468,7 +464,7 @@ class _DetailPageState extends State<DetailPage> {
                                                 Text(
                                                   getForecastWeather(1)["chanceOfRain"].toString() + "%",
                                                   style: TextStyle(
-                                                    fontSize: 16,
+                                                    fontSize: 18,
                                                     color: Colors.grey,
                                                   ),
                                                 ),
@@ -508,7 +504,7 @@ class _DetailPageState extends State<DetailPage> {
                                                 style: const TextStyle(
                                                   color: Color(0xff6696f5),
                                                   fontWeight: FontWeight.w600,
-
+                                                  fontSize: 20,  
                                                 ),
                                               ),
                                               Row(
@@ -571,9 +567,7 @@ class _DetailPageState extends State<DetailPage> {
                                               ),
                                             ],
                                           ),
-                                         const SizedBox(
-                                          height: 10,
-                                        ),
+                                         
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
@@ -582,7 +576,7 @@ class _DetailPageState extends State<DetailPage> {
                                               children: [
                                                 Image.asset(
                                                   "assets/images/pngs/" + getForecastWeather(2)["weatherIcon"],
-                                                  width: 30, 
+                                                  width: 50, 
                                                 ),
                                                 const SizedBox(
                                                   width: 5,
@@ -590,7 +584,7 @@ class _DetailPageState extends State<DetailPage> {
                                                 Text(
                                                   getForecastWeather(2)["weatherName"],
                                                   style: TextStyle(
-                                                    fontSize: 16,
+                                                    fontSize: 18,
                                                     color: Colors.grey,
                                                   ),
                                                 ),
@@ -602,7 +596,7 @@ class _DetailPageState extends State<DetailPage> {
                                                 Text(
                                                   getForecastWeather(2)["chanceOfRain"].toString() + "%",
                                                   style: TextStyle(
-                                                    fontSize: 16,
+                                                    fontSize: 18,
                                                     color: Colors.grey,
                                                   ),
                                                 ),

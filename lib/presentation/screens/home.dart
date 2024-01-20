@@ -372,9 +372,9 @@ class _HomePageState extends State<HomePage> {
                               children: [
                                 Text(
                                   forecastTime,
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 17,
-                                    color: Colors.white,
+                                    color: _constants.greyColor,
                                     fontWeight: FontWeight.w500,
                                   ),
                                   ),
@@ -387,16 +387,16 @@ class _HomePageState extends State<HomePage> {
                                     children: [
                                       Text(
                                         forecastTemperature,
-                                        style: const TextStyle(
-                                          color: Colors.white,
+                                        style: TextStyle(
+                                          color: _constants.greyColor,
                                           fontSize: 17,
                                           fontWeight: FontWeight.w600,
                                         ),
                                       ),
-                                      const Text(
+                                       Text(
                                         "o",
                                         style: TextStyle(
-                                          color: Colors.white,
+                                          color: _constants.greyColor,
                                           fontWeight: FontWeight.w600,
                                           fontSize: 17,
                                           fontFeatures: [

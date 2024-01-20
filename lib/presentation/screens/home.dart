@@ -13,7 +13,6 @@ import 'package:weather_app/presentation/widgets/additional_weather_info.dart';
 import 'package:weather_app/presentation/widgets/profile.dart';
 import 'package:weather_app/presentation/widgets/temperature.dart';
 import 'package:weather_app/presentation/widgets/weather_icon.dart';
-import 'package:weather_app/presentation/widgets/weather_item.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

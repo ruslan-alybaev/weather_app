@@ -24,6 +24,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final TextEditingController _cityController = TextEditingController();
   final Constants _constants = Constants();
+
+  // API from weatherapi.com
   static String API_KEY = "7d40ce19638544f2a6e70722241301";
 
   String location = "London"; // дефолтная локация

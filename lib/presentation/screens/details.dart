@@ -161,16 +161,22 @@ class _DetailPageState extends State<DetailPage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
+                                
+                                // Максимальная скорость ветра
                                 WeatherItem(
                                 value: getForecastWeather(0)["maxWindSpeed"],
                                   unit: "km/h",
                                   imageUrl: "assets/images/pngs/windspeed.png",
                                 ),
+
+                                // Влажность
                                 WeatherItem(
                                   value: getForecastWeather(0)["avgHumidity"],
                                   unit: "%",
                                   imageUrl: "assets/images/pngs/humidity.png",
                                 ),
+
+                                // Возможность выпадения осадков
                                 WeatherItem(
                                 value: getForecastWeather(0)["chanceOfRain"],
                                   unit: "%",
@@ -235,6 +241,8 @@ class _DetailPageState extends State<DetailPage> {
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
+
+                                              // Дата
                                               Text(
                                                 getForecastWeather(0)["forecastDate"],
                                                 style: const TextStyle(
@@ -247,6 +255,8 @@ class _DetailPageState extends State<DetailPage> {
                                                 children: [
                                                   Row(
                                                     children: [
+
+                                                      // Минимальная температура
                                                       Text(
                                                         getForecastWeather(0)["minTemperature"].toString(),
                                                         style: TextStyle(
@@ -276,6 +286,8 @@ class _DetailPageState extends State<DetailPage> {
                                                   
                                                   Row(
                                                     children: [
+
+                                                      // Максимальная температура
                                                       Text(
                                                         getForecastWeather(0)["maxTemperature"].toString(),
                                                         style: TextStyle(
@@ -310,6 +322,8 @@ class _DetailPageState extends State<DetailPage> {
                                             Row(
                                               mainAxisAlignment: MainAxisAlignment.center,
                                               children: [
+
+                                                // Иконка погоды
                                                 Image.asset(
                                                   "assets/images/pngs/" + getForecastWeather(0)["weatherIcon"],
                                                   width: 50, 
@@ -317,6 +331,8 @@ class _DetailPageState extends State<DetailPage> {
                                                 const SizedBox(
                                                   width: 5,
                                                 ),
+
+                                                // Название погоды
                                                 Text(
                                                   getForecastWeather(0)["weatherName"],
                                                   style: TextStyle(
@@ -329,6 +345,8 @@ class _DetailPageState extends State<DetailPage> {
                                             Row(
                                               mainAxisAlignment: MainAxisAlignment.center,
                                               children: [
+
+                                                // Шанс выпадения осадков
                                                 Text(
                                                   getForecastWeather(0)["chanceOfRain"].toString() + "%",
                                                   style: TextStyle(

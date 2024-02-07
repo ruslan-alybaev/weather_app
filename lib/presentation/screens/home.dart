@@ -288,6 +288,7 @@ class _HomePageState extends State<HomePage> {
               // Больше информации о скорости ветра, влажности и облачности
               AdditionalWeatherInfo(windSpeed: windSpeed, humidity: humidity, cloud: cloud),
               
+              
              
               
               ],
